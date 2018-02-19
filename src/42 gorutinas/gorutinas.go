@@ -33,7 +33,8 @@ func imprimirCantidad(etiqueta string) {
 	for i := 0; i < 10; i++ {
 		// Espera aleatoria
 		sleep := rand.Int63n(1000)
-		time.Sleep(time.Duration(sleep) * time.Millisecond) 
+		time.Sleep(time.Duration(sleep) * time.Millisecond)
+
 		fmt.Printf("Cantidad: %d de %s\n", i, etiqueta)
 	}
 }
