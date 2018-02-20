@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io"
 	"log"
 	"net"
@@ -16,7 +15,7 @@ func main() {
 	}
 
 	for {
-		fmt.Println("Esperando conexion al puerto #8000")
+		log.Print("Esperando conexion al puerto #8000")
 		conn, err := listener.Accept()
 		if err != nil {
 			log.Print(err)
@@ -34,7 +33,7 @@ func manejarConexion(conn net.Conn) {
 	for {
 		_, err := io.WriteString(conn, time.Now().Format("15:04:05\n\r"))
 		if err != nil {
-			fmt.Println("Cliente desconectado!")
+			log.Print("Cliente desconectado!")
 			return // p ej. si el cliente de desconecta
 		}
 
