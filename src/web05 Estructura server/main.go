@@ -19,13 +19,13 @@ func main() {
 	mux.HandleFunc("/usuario", usuarioHandler)
 	mux.Handle("/hola", msg)
 
-	// Podemos modificar algunos datos
+	// COn nuestro propio server, podemos modificar algunos datos
 	server := &http.Server{
 		Addr:           ":8080",
 		Handler:        mux,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
-		MaxHeaderBytes: 1 << 20, // 1MB
+		MaxHeaderBytes: 1 << 20, // 1MB (se podria poner el numero largo)
 	}
 	log.Println("Listening..")
 	server.ListenAndServe()
