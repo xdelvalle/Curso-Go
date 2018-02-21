@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func mainX() {
+func main1X() {
 	numero := make(chan int)
 	cuadrado := make(chan int)
 
