@@ -1,0 +1,10 @@
+{{define "visitantes"}}
+Formulario de migracion para visitantes
+
+Nombre: {{.Nombre}}
+Edad: {{.Edad}}
+País de Origen: {{.Pais}}
+
+Lorem ipsum dolor sit amet. blaa bla blaaaa bla blaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa bla
+blaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa
+{{end}}

@@ -1,0 +1,10 @@
+{{define "residentes"}}
+Formulario de migracion para residentes
+
+Nombre: {{.Nombre}}
+Edad: {{.Edad}}
+País de Origen: {{.Pais}}
+
+Lorem ipsum dolor sit amet. blaa bla blaaaa bla blaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa bla
+blaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa blablaa bla blaaaa
+{{end}}
